@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SecondActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".SecondActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mainht"
+                android:id="@+id/msgWelcome"
+                android:text="@string/msgWlcm"
+                android:textSize="@dimen/txtsize2"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/msgNote"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:text="@string/msgNote"
+                android:textSize="@dimen/noteSize"
+                android:fontFamily="sans-serif-medium" />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:text="@string/enterName"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enterName"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:layout_marginRight="3dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/enterName"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:text="@string/enterEmail"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enterEmail"
+                        android:maxLines="1"
+                        android:layout_marginRight="3dp"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:id="@+id/enterEmail"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enterDOB"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hintDOB"
+                        android:maxLines="1"
+                        android:layout_marginRight="3dp"
+                        android:inputType="date"
+                        android:maxLength="10"
+                        android:textColor="@color/black"
+                        android:id="@+id/enterDOB"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enterPhone"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enterPhone"
+                        android:maxLines="1"
+                        android:layout_marginRight="3dp"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="@color/black"
+                        android:id="@+id/enterPhone"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enterCity"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enterCity"
+                        android:maxLines="1"
+                        android:layout_marginRight="3dp"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:id="@+id/enterCity"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enterPin"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enterPin"
+                        android:maxLines="1"
+                        android:layout_marginRight="3dp"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="@color/black"
+                        android:id="@+id/enterPin"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_weight="1"
+                        android:text="@string/pickGender"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:layout_weight="2"
+                        android:weightSum="3"
+                        android:id="@+id/radiogrp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/gMale"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/gMale"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/gFemale"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:id="@+id/gFemale"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/gOther"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:id="@+id/gOther"/>
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtOther"
+                android:hint="@string/enterOther"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="fill_vertical"
+                android:id="@+id/terms"
+                android:text="@string/checkTerms"
+                android:layout_marginTop="@dimen/margins" />
+
+            <Button
+                android:id="@+id/btnSubmit2"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/mainht"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/btnSubmit"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/margins"/>
+        </LinearLayout>
+    </ScrollView>
+</layout>
