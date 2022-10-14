@@ -23,7 +23,7 @@ class SecondActivity : AppCompatActivity() {
         binding.radiogrp.setOnCheckedChangeListener { radioGroup, i ->
             when(i){
                 R.id.gMale->{
-                    Toast.makeText(this,"he/him", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "he/him", Toast.LENGTH_SHORT).show()
                     binding.txtOther.visibility = View.GONE
                 }
                 R.id.gFemale->{
